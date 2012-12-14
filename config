@@ -1,0 +1,22 @@
+
+#Add the desired HOSTS and ROUTERS
+addHost RTA
+addHost RTB
+addHost RTC
+addHost RTD
+#addHost H1
+#addHost H2
+#addHost H3
+#addHost H4
+
+#ADD LINKS
+addLink RTA RTD
+addLink RTA RTC
+addLink RTA RTB 
+addLink RTB RTC 
+
+#addLink RTA H1 
+#addLink RTB H2 
+#addLink RTC H3 
+#addLink RTD H4 
+

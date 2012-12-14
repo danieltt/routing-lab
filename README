@@ -1,0 +1,24 @@
+Scripts for managing lxc for lab manager
+Author: Daniel Turull <danieltt@kth.se>
+
+This scripts rely on lxc containers
+
+Add the following line to /etc/fstab
+none /cgroup cgroup defaults 0 0
+
+All the commands to be run as root.
+
+NOTE: uncompress bifrost.tar first to create the file system
+tar xvf bifrost.tgz
+
+To create the envirorment use ./manage-topology create
+
+Then for starting use ./manage-topoloy start
+
+To see which containers are running use
+lxc-ls
+
+And to access to the terminal
+lxc-console --name <name>
+
+Type <Ctrl+a q> to exit the console
