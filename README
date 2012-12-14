@@ -1,5 +1,8 @@
 Scripts for managing lxc for lab manager
-Author: Daniel Turull <danieltt@kth.se>
+--------------------
+Copyright (C) Daniel Turull <danieltt@kth.se>
+
+--------------------
 
 This scripts rely on lxc containers
 
