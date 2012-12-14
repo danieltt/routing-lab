@@ -26,7 +26,7 @@ and for the clean up
 To see which containers are running use
 lxc-ls
 
-And to access to the terminal
+And to access the router with the console
 lxc-console --name <name>
 user: root
 password: time2work
