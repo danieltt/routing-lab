@@ -11,9 +11,17 @@ All the commands to be run as root.
 NOTE: uncompress bifrost.tar first to create the file system
 tar xvf bifrost.tgz
 
-To create the envirorment use ./manage-topology create
+To create the envirorment use:
+./manage-topology create
 
-Then for starting use ./manage-topoloy start
+Then for starting use:
+./manage-topoloy start
+
+Once done, to stop use:
+./manage-topolgy stop
+
+and for the clean up
+./manage-topology destroy
 
 To see which containers are running use
 lxc-ls
@@ -25,6 +33,8 @@ password: time2work
 
 
 Type <Ctrl+a q> to exit the console
+
+--- Change router password ---
 Password can be changed using chroot envirorment on the bifrost file system
 mount -t proc proc proc/
 mount -t sysfs sys sys/
@@ -33,3 +43,8 @@ mount -t devpts pts dev/pts/
 
 chroot bifrost /bin/bash
 passwd
+
+--- Change topology ---
+to change topology modify config file
+addHost <name>
+addLink <src> <dst>
