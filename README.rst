@@ -1,5 +1,5 @@
 ==============================
-Scripts for managing lxc for lab manager
+Scripts to  manage routing lab with lxc
 ==============================
 
 Author
