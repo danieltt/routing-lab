@@ -45,8 +45,7 @@ To see which containers are running use
 ::
     lxc-ls
 
-And to access the router with the console. user: root password: time2work
-
+And to access the router with the console. **user:** root **password:** time2work
 ::
   lxc-console --name <name>
 
