@@ -20,5 +20,16 @@ lxc-ls
 
 And to access to the terminal
 lxc-console --name <name>
+user: root
+password: time2work
+
 
 Type <Ctrl+a q> to exit the console
+Password can be changed using chroot envirorment on the bifrost file system
+mount -t proc proc proc/
+mount -t sysfs sys sys/
+mount -o bind /dev dev/
+mount -t devpts pts dev/pts/
+
+chroot bifrost /bin/bash
+passwd
